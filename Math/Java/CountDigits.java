@@ -11,14 +11,14 @@ public class CountDigits {
         System.out.println(countDigits(n));
     }
 
-    Method 1-recursive
+    // Method 1-recursive
 
     private static int countDigits(long n) {
     if(n==0) return 0;
     return 1+ countDigits(n/10)
     }
 
-    Method 2-iterative
+    // Method 2-iterative
 
     private static int countDigits(long n) {
         int count = 0;
@@ -29,7 +29,7 @@ public class CountDigits {
         return count;
     }
 
-    Method 3-
+    // Method 3-
 
     logarithmic approach
 
