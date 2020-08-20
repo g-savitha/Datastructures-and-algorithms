@@ -11,26 +11,33 @@ public class CountDigits {
         System.out.println(countDigits(n));
     }
 
-    // Method 1 -recursive
-    // private static int countDigits(long n) {
-    // if(n==0) return 0;
-    // return 1+ countDigits(n/10)
-    // }
+    Method 1-recursive
 
-    // Method 2 - iterative
-    // private static int countDigits(long n) {
-    // int count = 0;
-    // while (n > 0) {
-    // n /= 10;
-    // count++;
-    // }
-    // return count;
-    // }
+    private static int countDigits(long n) {
+    if(n==0) return 0;
+    return 1+ countDigits(n/10)
+    }
 
-    // Method 3 - logarithmic approach
-    // private static long countDigits(long n) {
-    // return (int) Math.floor(Math.log10(n) + 1);
-    // }
+    Method 2-iterative
+
+    private static int countDigits(long n) {
+        int count = 0;
+        while (n > 0) {
+            n /= 10;
+            count++;
+        }
+        return count;
+    }
+
+    Method 3-
+
+    logarithmic approach
+
+    private static long countDigits(long n) {
+        if (n == 0)
+            return 0;
+        return (int) Math.floor(Math.log10(n) + 1);
+    }
 
     // Method 4 _ convert num to string and find string length
     private static int countDigits(long n) {
