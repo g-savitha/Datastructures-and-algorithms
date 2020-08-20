@@ -29,9 +29,7 @@ public class CountDigits {
         return count;
     }
 
-    // Method 3-
-
-    logarithmic approach
+    // Method 3-logarithmic approach
 
     private static long countDigits(long n) {
         if (n == 0)
