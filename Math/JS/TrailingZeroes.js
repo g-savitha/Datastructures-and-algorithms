@@ -17,7 +17,6 @@ const trailingZeroes = (n) =>{
 }
 
 //EFFICIENT APPROACH
-
 const efficientTrailZeroes = (n) =>{
     let res = 0;
     //first ompute n/5, then compute n/25, then compute n /125 ...
