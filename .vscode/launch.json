@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch MoveZeroesToEnd",
+            "request": "launch",
+            "mainClass": "MoveZeroesToEnd",
+            "projectName": "Competitive-Programming_b2af5e31"
+        },
+        {
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",

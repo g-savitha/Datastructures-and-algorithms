@@ -33,5 +33,24 @@ public class ArrayOperations{
     		arr[j] = arr[j + 1];
     	}
     	return n-1;
-    } 
+	} 
+	static boolean isSorted(int[] arr, int n){
+		for(int i = 1; i <n; i++){
+			if(arr[i] > arr[i-1]) return false;
+		}
+		return true;
+	}
+	static void reverse(int[] arr, int n){
+		int low = 0;
+		int high = n- 1;
+		int temp = 0;
+		while(low < high){
+			temp = a[low]; a[low] = a[high]; a[high] = temp;
+			low++;
+			high--;
+		}
+		for(int i = 0; i < a.length; i++){
+			System.out.print(a[i]);
+		}
+	}
 }
