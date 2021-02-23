@@ -40,7 +40,7 @@ public class ArrayOperations{
 		}
 		return true;
 	}
-	static void reverse(int[] arr, int n){
+	static void reverse(int[] a, int n){
 		int low = 0;
 		int high = n- 1;
 		int temp = 0;
